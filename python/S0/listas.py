@@ -15,7 +15,7 @@ colores = ['verde', 'rojo', 'rosa', 'azul']
 # Ver métodos posibles a usar:
 
 # print(lista_de_numeros.__dir__())
-
+print('triple indice',lista_de_numeros[6:2:-1])
 # Método para gregar un elemento a la lista:
 
 colores.append('celeste')
