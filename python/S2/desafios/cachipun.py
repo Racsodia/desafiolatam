@@ -1,3 +1,7 @@
+'''
+    Programa que emula jugar al cachipún contra la computadora.
+    Se debe ingresar como argumento la jugada del usuario: piedra, papel o tijeras
+'''
 
 import random
 import sys
