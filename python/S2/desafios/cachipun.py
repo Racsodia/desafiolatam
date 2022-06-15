@@ -19,6 +19,10 @@ if(len(sys.argv) < 2):
     print('Debes ingresar si juegas piedra, papel o tijeras en los argumantos de ejecución')
     exit()
 
+if not sys.argv[1] in opciones:
+    print('Debes ingresar la palabra correcta, utiliza: piedra, papel o tijeras')
+    exit()
+
 usuario = sys.argv[1]
 maquina = random.choice(opciones)
 
