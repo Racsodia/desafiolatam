@@ -11,10 +11,10 @@
     Autor: Óscar Aguilera B.
 
 '''
-
+import getpass
 from string import ascii_lowercase
 
-password = input('Ingrese la contraseña: ')
+password = getpass.getpass('Ingrese la contraseña: ')
 intentos = 0
 for letra in password:
     for ascii in ascii_lowercase:
