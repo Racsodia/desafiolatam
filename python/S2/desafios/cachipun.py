@@ -8,13 +8,6 @@ import sys
 
 opciones = ['piedra', 'papel', 'tijeras']
 
-resultados_posibles = {
-    'piedra': {'papel': -1, 'piedra': 0, 'tijeras': 1},
-    'papel': {'tijeras': -1, 'papel': 0, 'piedra': 1},
-    'tijeras' : {'piedra': -1, 'tijeras': 0, 'papel':1}
-}
-
-
 if(len(sys.argv) < 2):
     print('Debes ingresar si juegas piedra, papel o tijeras en los argumantos de ejecución')
     exit()
@@ -22,6 +15,12 @@ if(len(sys.argv) < 2):
 if not sys.argv[1] in opciones:
     print('Debes ingresar la palabra correcta, utiliza: piedra, papel o tijeras')
     exit()
+
+resultados_posibles = {
+    'piedra': {'papel': -1, 'piedra': 0, 'tijeras': 1},
+    'papel': {'tijeras': -1, 'papel': 0, 'piedra': 1},
+    'tijeras' : {'piedra': -1, 'tijeras': 0, 'papel':1}
+}
 
 usuario = sys.argv[1]
 maquina = random.choice(opciones)
