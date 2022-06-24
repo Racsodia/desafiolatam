@@ -38,9 +38,7 @@ def filtro(umbral, orden='mayor'):
         result = {k: v for k, v in sorted(
             precios.items(), reverse=True) if v < umbral}
 
-    salida = ''
-    for index, texto in enumerate(result.keys()):
-        salida += texto + ', ' if index != len(result) - 1 else texto
+    salida = ', '.join(result)
     return salida
 
 
@@ -59,6 +57,6 @@ if(len(sys.argv) > 2 and not sys.argv[2] in opciones):
 elif(len(sys.argv) > 2 and sys.argv[2] in opciones):
     orden_filtrado = sys.argv[2].lower()
     print(
-        f'Los productos {orden_filtrado}es al filtrado son: {filtro(precio_filtrado,orden_filtrado)}')
+        f'Los productos {orden_filtrado}es a ${precio_filtrado} filtrado son: {filtro(precio_filtrado,orden_filtrado)}')
 else:
-    print(f'Los productos mayores al filtrado son: {filtro(precio_filtrado)}')
+    print(f'Los productos mayores a ${precio_filtrado} filtrado son: {filtro(precio_filtrado)}')
