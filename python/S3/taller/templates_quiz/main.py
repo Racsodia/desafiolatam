@@ -1,4 +1,13 @@
 
+'''
+    Desafío latam talle semana 3 módulo de Python g49
+
+    Autores:
+        Nicolle Salas
+        Isidora Mura
+        Sebastián Ponce
+        Óscar Aguilera
+'''
 # No modificar
 from verify import verificar
 import preguntas as p
