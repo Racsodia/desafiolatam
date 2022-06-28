@@ -4,10 +4,10 @@ def print_pregunta(enunciado, alternativas):
     
     # Imprimir enunciado y alternativas
     ###############################################################
-    pass
-    
-    
-    
+    vineta = ['A.','B.','C.','D.']
+    print(enunciado[0] + '\n')
+    for indice,alternativa in enumerate(alternativas):
+        print(vineta[indice] + ' ' + alternativa[0])
     
     ###############################################################
         
