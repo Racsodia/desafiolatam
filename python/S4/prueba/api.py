@@ -19,6 +19,7 @@ def build_web_page(srcs):
         </body>
     </html>
     '''
+    print(template_top[2])
     for src in srcs:
         template_top += (f'<li><img src={src}></li>')
     file.write(template_top + template_bottom)
